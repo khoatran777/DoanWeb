@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">
+        <img src="img/sony.png">
+    </div>
+    <div id="giua">
+        <div id="nhapthongtin">
+            <div id="login">
+                <p>Tài khoản</p>
+                <input  class="acc"  type="email" id="Tk" placeholder="Tài khoản">
+                <div id="thongbao">Email hoặc mật khẩu của bạn không đúng</div>
+                <div style="border-radius: 1px; width: 500px; height: 1px; background-color: black; margin-left: 27px; margin-top: 10px;"></div>
+                <p>Mật khẩu</p>
+                <input class="acc" type="password" id="Mk" placeholder="Mật khẩu">
+                <div style="border-radius: 1px; width: 500px; height: 1px; background-color: black; margin-left: 27px; margin-top: 10px;"></div>
+                <div id="pw">
+                    <input type="checkbox" onclick="showpass()"><span style="font-family: Arial, Helvetica, sans-serif;">Hiển thị mật khẩu</span>
+                </div>
+                <div id="dangnhap" onclick="login()">
+                    <a>Đăng nhập</a>
+                </div>
+                <div id="DkTK">
+                    <span style="font-family: Arial, Helvetica, sans-serif;">Bạn chưa có tài khoản?</span><a style="font-family: Arial, Helvetica, sans-serif;" href="Dangky.html">/Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

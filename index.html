@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <link rel="icon" href="img/sony.png" type="im">
+        <link rel="stylesheet" href="trangchu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Store Console</title>
+    </head>
+    <body>
+        <div id="head">
+            <div id="nav">
+                <a href=""><i class="fa-solid fa-house"></i>Trang chủ</a>
+                <a href=""><i class="fa-solid fa-building"></i> Giới thiệu</a>
+                <a href=""><i class="fa-solid fa-phone"></i> Hotline</a>
+                <a href=""><i class="fa-solid fa-sack-dollar"></i> Trả góp</a>
+                <a href=""><i class="fa-solid fa-fire"></i> Khuyến mãi</a>
+                <a href=""><i class="fa-solid fa-wrench"></i> Lắp đặt phòng game</a>
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Đăng ký/Đăng nhập</a>
+                <input id="inputtimkiem" type="text" placeholder=" Bạn cần tìm gì">
+                <div id="giohang">
+                    <a id="cart" onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a><span style="color: #fff; font-family: Arial, Helvetica, sans-serif;" id="soSp"></span>
+                    <div id="showcart">
+                        <table style="font-family: Arial, Helvetica, sans-serif;" cellpadding="5px" cellspacing="0px">
+                            <thead>
+                                <tr>
+                                    <th>Hình</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Đơn Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td><img style="width: 70px;"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <div id="kiemtracart"><h1>Giỏ hàng của bạn đang trống</h1></div>
+                        <div style="border:  solid 1px black; width: 80%; margin: 10px auto;"></div>
+                        <div id="tongtien">
+                            <div id="tongtienTXT"><span>Tổng tiền :</span></div>
+                            <div id="tien"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="img/banner.png">
+            </div>
+        </div>
+        <div id="container">
+            <div id="title">
+                <div id="section">
+                    <a class="section-title">MÁY CHƠI GAME PS5</a>
+                </div>
+                <div class="btn-product">
+                    <a href="" class="linkProduct"><i class="fa-solid fa-list"></i> All Product</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/ps god.jpg">
+                <a class="nameItem" href="/trangsanP.html">Bộ máy chơi game PS5 God Of War</a>
+                <p id="gia">17490000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/ps god.jpg">
+                <a class="nameItem" href="">Bộ máy chơi game PS5 God Of War</a>
+                <p id="gia">17490000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/2taycam.png">
+                <a class="nameItem" href="">Máy chơi game Playstation 5 hai tay cầm</a>
+                <p>17690000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/PS$sta.jpg">
+                <a  class="nameItem" href="">Máy chơi game Playstation 5 Standard</a>
+                <p>15990000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div>
+                <div id="title1">
+                    <div id="section1">
+                        <a class="section-title">ĐĨA CHƠI GAME PS5</a>
+                    </div>
+                    <div class="btn-product">
+                        <a href="" class="linkProduct"><i class="fa-solid fa-list"></i> All Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/fifa.jpg">
+                <a class="nameItem" href="">Đĩa PS5 Forspoken</a>
+                <p>999000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/gamegod.png">
+                <a class="nameItem" href="">Đĩa game God of War Ragnarok PS5</a>
+                <p>1799000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/game2.png">
+                <a class="nameItem" href="">Đĩa game Ghostwire Tokyo </a>
+                <p>1499000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/img/thelastofus.png">
+                <a class="nameItem" href="">Đĩa game The Last Of Us Past 1</a>
+                <p>1799000₫</p>
+                <div class="addCart">
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div>
+                <div id="title1">
+                    <div id="section1">
+                        <a class="section-title">PHỤ KIỆN PS5</a>
+                    </div>
+                    <div class="btn-product">
+                        <a href="" class="linkProduct"><i class="fa-solid fa-list"></i> All Product</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/img/taycamDualsense Edge.webp">
+                    <a class="nameItem" href="">Tay cầm không dây Dualsense Edge</a>
+                    <p>5699000₫</p>
+                    <div class="addCart">
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/img/taythay.webp">
+                    <a class="nameItem" href="">Cụm thay thế Dualsense Edge</a>
+                    <div class="addCart">
+                        <p>599000₫</p>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/img/taycamGow.webp">
+                    <a class="nameItem" href="">Tay cầm không dây Dualsense GoW LE</a>
+                    <p>2099000₫</p>
+                    <div class="addCart">
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="/img/caycamgray.webp">
+                    <a class="nameItem" href="">Tay cầm không dây Dualsense Gray Camo</a>
+                    <p>2099000₫</p>
+                    <div class="addCart">
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foodte">
+            <div id="Address">
+                <div id="Address-map">
+                    <div>
+                        <p>© 2020 SONY VIỆT NAM | ĐÃ ĐĂNG KÝ BẢN QUYỀN.</p>
+                        <p>CÔNG TY TNHH SONY ELECTRONICS VIỆT NAM</p>
+                        <p>MSDN: 0305712139 – NGÀY CẤP: 16/05/2008 – NƠI CẤP: SỞ KẾ HOẠCH VÀ ĐẦU TƯ TP. HỒ CHÍ MINH.</p>
+                        <p>ĐỊA CHỈ: TẦNG 6 VÀ 7, TÒA NHÀ PRESIDENT PLACE, 93 NGUYỄN DU, PHƯỜNG BẾN NGHÉ, QUẬN 1, TP. HỒ CHÍ MINH.</p>
+                        <p>ĐIỆN THOẠI: 084 38222227</p>
+                    </div>
+                </div>
+                <div id="Address-socialN">
+                    <a href="https://www.youtube.com/user/SonyVietNamMarcom" title="youtube"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="java.js"></script>
+    </body>
+</html>

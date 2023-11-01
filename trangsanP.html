@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trangsanP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">
+        <div id="nav">
+            <a href=""><i class="fa-solid fa-house"></i>Trang chủ</a>
+            <a href=""><i class="fa-solid fa-building"></i> Giới thiệu</a>
+            <a href=""><i class="fa-solid fa-phone"></i> Hotline</a>
+            <a href=""><i class="fa-solid fa-sack-dollar"></i> Trả góp</a>
+            <a href=""><i class="fa-solid fa-fire"></i> Khuyến mãi</a>
+            <a href=""><i class="fa-solid fa-wrench"></i> Lắp đặt phòng game</a>
+            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Đăng ký/Đăng nhập</a>
+            <input id="inputtimkiem" type="text" placeholder=" Bạn cần tìm gì">
+            <div id="giohang">
+                <a id="cart" onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a><span style="color: #fff; font-family: Arial, Helvetica, sans-serif;" id="soSp">0</span>
+                <div id="showcart">
+                    <table style="font-family: Arial, Helvetica, sans-serif;" cellpadding="5px" cellspacing="0px">
+                        <thead>
+                            <tr>
+                                <th>Hình</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Đơn Giá</th>
+                                <th>Số lượng</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td><img style="width: 70px;"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <div id="kiemtracart"><h1>Giỏ hàng của bạn đang trống</h1></div>
+                    <div style="border:  solid 1px black; width: 80%; margin: 10px auto;"></div>
+                    <div id="tongtien">
+                        <div id="tongtienTXT"><span>Tổng tiền :</span></div>
+                        <div id="tien"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="sanpham">
+            <div id="product__slideshow">
+                <div id="anh">
+                    <img id="slide" src="/img/Sanpham/1.jpg">
+                    <button id="next" onclick="next()"><i class="fa-solid fa-angle-right"></i></button>
+                    <button id="prev" onclick="back()"><i class="fa-solid fa-angle-left"></i></button>
+                </div>
+            </div>
+            <div id="themgio">
+                <div style="width: 350px; margin: 0px auto;">
+                    <h1>Máy chơi game PlayStation 5 hai tay cầm</h1>
+                    <p>Gia</p>
+                    <span>17690000</span><br><br>
+                    <img src="/img/Sanpham/1.jpg">
+                    <input type="button" onclick="sub('txt1')" value="-">
+                    <input id="txt1" style="width: 20px" value="1">
+                    <input type="button" onclick="plus('txt1')" value="+">
+                    <div class="addCart">
+                        <button id="them">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="TOTAL">
+        <div id="ThongtinSP">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;">Tổng quan</h1>
+            <div style="width: 100%; height: 1px;background-color: black;"></div>
+            <span>*Mỗi đơn hàng giới hạn ở 03 (ba) sản phẩm đối với mỗi email đã đăng ký (tùy thuộc vào tình trạng còn hàng của sản phẩm)</span><br>
+            <span>*Đối Với Các Đơn Hàng Playstation 5, Sony Không Chấp Nhận Hình Thức Thanh Toán Trả Góp</span><br><br>
+            <span>
+                - Phiên Bản Standard Kèm Đầu Đọc Ultra HD Blu-Ray<br>
+                - Dùng Để Chơi Game Độc Quyền PS5 Và Toàn Bộ Game PS4<br>
+                - 390mm X 104mm X 260mm; 4,2kg<br>
+                - CPU 8 Cores / 16 Threads, X86-64-AMD Ryzen™ “Zen 2”<br>
+                - GPU AMD Radeon™ RDNA, Ray Tracing Acceleration<br>
+                - Dung Lượng SSD 825GB<br>
+                - Hỗ Trợ Hình Ảnh 8K, Công Nghệ Âm Thanh 3D "Tempest"<br>
+                - Kèm Theo Game Astro's Playroom Cài Sẵn Trên Máy Và 2 Tay Cầm DualSense
+            </span>
+        </div>
+    </div>
+    <div id="foodte">
+        <div id="Diachi">
+            <div id="Diachi-mini">
+                <div id="left">
+                    <span>
+                        © 2020 SONY VIỆT NAM | ĐÃ ĐĂNG KÝ BẢN QUYỀN.<br>
+                        CÔNG TY TNHH SONY ELECTRONICS VIỆT NAM<br>
+                        MSDN: 0305712139 – NGÀY CẤP: 16/05/2008 – NƠI CẤP: SỞ KẾ HOẠCH VÀ ĐẦU TƯ TP. HỒ CHÍ MINH.<br>
+                        ĐỊA CHỈ: TẦNG 6 VÀ 7, TÒA NHÀ PRESIDENT PLACE, 93 NGUYỄN DU, PHƯỜNG BẾN NGHÉ, QUẬN 1, TP. HỒ CHÍ MINH.<br>
+                        ĐIỆN THOẠI: 084 38222227<br>
+                    </span>
+                </div>
+                <div id="right">
+                    <a href="https://www.youtube.com/user/SonyVietNamMarcom" title="youtube"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="trangsanP.js"></script>
+</body>
+</html>

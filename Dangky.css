@@ -1,0 +1,68 @@
+body{
+    background-image:url(/img/bgdangky.jpg);
+    background-size:cover ;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+}
+#head{
+    width: 100%;
+    height: 70px;
+    background-color: #1F2024;;
+}
+#head img{
+    height: 100%;
+}
+#nhapthongtin{
+    width: 1000px;
+    height: 1000px;
+    margin: 0px auto;
+}
+#dangky{
+    border-radius: 15px;
+    backdrop-filter: blur(100px);
+    width: 500px;
+    height: 680px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.dienthongtin{
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0.01) ;
+    float: left;
+    width: 450px;
+    height: 40px;
+    margin: 0px 23px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+#btnDk{
+    user-select: none;
+    cursor: pointer;
+    width: 450px;
+    float: left;
+    height: 50px;
+    background-color: #F35429;
+    margin: 30px 23px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+#btnDk span{
+    color: #fff;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+#Tk{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Tk span{
+
+}
+#Tk a{
+    color:#fff;
+    text-decoration: none;
+}
