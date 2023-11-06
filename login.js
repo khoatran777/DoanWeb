@@ -27,7 +27,7 @@ function login(){
     var data  =JSON.parse(user);
     if (user==null){
         alert("vui lòng nhập thông tin")
-    }else if(username==data.username && username== data.username&& matkhau==data.matkhau){
+    } else if(username==data.username && username== data.username&& matkhau==data.matkhau){
         alert("dang nhap thanh cong")
         window.location.href="index.html"
     }

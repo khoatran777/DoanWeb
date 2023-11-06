@@ -1,6 +1,5 @@
 
 const btn = document.querySelectorAll("#them")
-console.log(btn)
 btn.forEach(function(button,index){
     button.addEventListener("click",function(event){
         var btnItem =event.target
@@ -20,11 +19,11 @@ function addcart(priceProduct,nameItem,productImg){
         if(productlap[i].innerHTML==nameItem){
             tang += 1;
             document.querySelector(".tangg").value =tang;
+            carttotal()
             return
         }
-        carttotal()
     }
-    var trcontent = '<td><img src="'+productImg+'" style="width: 70px;"></td> <td class=tensp>'+nameItem+'</td> <td class=giaa>'+priceProduct+'</td> <td><input class="tangg" style="width: 40px" type="text" value="1"></td> <td class="price-total"><span class="xoa"><i class="fa-solid fa-trash"></i></span</td>'
+    var trcontent = '<td><img src="'+productImg+'" style="width: 70px;"></td> <td class=tensp>'+nameItem+'</td> <td class=giaa>'+priceProduct+'</td> <td><input onkeydown="tinhlai()" class="tangg" style="width: 40px" type="text" value="1"></td> <td class="price-total"><span class="xoa"><i class="fa-solid fa-trash"></i></span</td>'
     addtr.innerHTML= trcontent
     var cartTable =document.querySelector("tbody")
     cartTable.append(addtr)
@@ -119,3 +118,14 @@ function checkcart(){
     }
 
 }
+function tinhlai() {
+    var inputElements = document.getElementsByClassName('tangg');
+    if (inputElements.length > 0) {
+        var inputValue = inputElements[0].value;
+        console.log(inputValue);
+        carttotal()
+    } else {
+        console.log('Không tìm thấy phần tử có class là "tangg"');
+    }
+}
+

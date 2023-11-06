@@ -44,7 +44,7 @@ function addcart(productImg,nameItem,priceProduct){
         }
         carttotal()
     }
-    var trcontent = '<td><img src="'+productImg+'" style="width: 70px;"></td> <td class=tensp>'+nameItem+'</td> <td class=giaa>'+priceProduct+'</td> <td><input onclick="refresh()" class="tangg" style="width: 40px" type="text" value="1"></td> <td class="price-total"><span class="xoa"><i class="fa-solid fa-trash"></i></span</td>'
+    var trcontent = '<td><img src="'+productImg+'" style="width: 70px;"></td> <td class=tensp>'+nameItem+'</td> <td class=giaa>'+priceProduct+'</td> <td><input onkeydown="tinhlai()" class="tangg" style="width: 40px" type="text" value="1"></td> <td class="price-total"><span class="xoa"><i class="fa-solid fa-trash"></i></span</td>'  
     addtr.innerHTML= trcontent
     var cartTable =document.querySelector("tbody")
     cartTable.append(addtr)
@@ -79,4 +79,14 @@ function deletecart(){
         })
     }
     
+}
+function tinhlai() {
+    var inputElements = document.getElementsByClassName('tangg');
+    if (inputElements.length > 0) {
+        var inputValue = inputElements[0].value;
+        console.log(inputValue);
+        carttotal()
+    } else {
+        console.log('Không tìm thấy phần tử có class là "tangg"');
+    }
 }
