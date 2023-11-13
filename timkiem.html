@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="timkiem.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">
+        <img src="img/sony.png">
+    </div>
+    <div id="timkiem">
+        <div id="seach">
+            <input onkeyup="" id="input" name="name" type="text" placeholder="Bạn cần tìm cái gì">
+        </div>
+    </div>
+    <div id="thongtin" style="height: 100%; width: 600px; background-color: aliceblue; border-radius: 10px;float: left;margin: 40px 40%;display: none; ">
+        <button onclick="tim()"></button>
+        <table style="font-family: Arial, Helvetica, sans-serif;" cellpadding="15px" cellspacing="10px">
+            <thead>
+                <tr>
+                    <th>Hình</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn Giá</th>
+                </tr>
+            </thead>
+            <tbody id="data-output">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="timkiem.js"></script>
+</body>
+</html>
