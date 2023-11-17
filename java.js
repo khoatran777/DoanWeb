@@ -1,15 +1,24 @@
 const btn = document.querySelectorAll("button")
 btn.forEach(function(button,index){
     button.addEventListener("click",function(event){
+        // Lấy giỏ hàng hiện tại từ localStorage
+        var giohang = JSON.parse(localStorage.getItem("cart")) || [];
         var btnItem = event.target
         var product = btnItem.parentElement.parentElement
         var productImg = product.querySelector("img").src
         var nameItem = product.querySelector("a").innerText
         var priceProduct = product.querySelector("p").innerHTML
         addcart(productImg,nameItem,priceProduct)
-        
+        var sp={
+            "hinh": productImg,
+            "ten": nameItem,
+            "gia":priceProduct
+        }
+        giohang.push(sp)
+        localStorage.setItem("cart",JSON.stringify(giohang))
     })
 })
+
 function showcart(){
     var x= document.getElementById("showcart")
     if(x.style.display=="block"){
@@ -57,7 +66,7 @@ function carttotal(){
     for (var i=0;i<carItem.length;i++){
         var inputValue= carItem[i].querySelector(".tangg").value
         var priceProduct= carItem[i].querySelector('.giaa').innerHTML
-        console.log(priceProduct)
+        // console.log(priceProduct)
         priceProduct=parseInt(priceProduct,) 
         totalpriceA = inputValue*priceProduct
         tatalC = tatalC+totalpriceA
@@ -90,3 +99,5 @@ function tinhlai() {
         console.log('Không tìm thấy phần tử có class là "tangg"');
     }
 }
+
+

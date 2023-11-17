@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="Pay.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
         <div style="height: 20px; width: 100%; padding: 10px;">
         </div>
         <div id="thongtinPay">
-            <table style="font-family: Arial, Helvetica, sans-serif;" cellpadding="5px" cellspacing="0px">
+            <table style="font-family: Arial, Helvetica, sans-serif;" cellpadding="5px" cellspacing="0px" >
                 <thead>
                     <tr>
                         <th>Hình</th>
@@ -27,7 +28,7 @@
                         <th>Xóa</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="data-output">
                     <!-- <tr>
                         <td><img style="width: 70px;"></td>
                         <td></td>
@@ -37,13 +38,29 @@
                     </tr> -->
                 </tbody>
             </table>
-            <div id="btn-thanhtoan">
-                <button id="btn-pro">Thanh toán</button>
-            </div>
+        </div>
+        <div style="margin: 50px auto; float: right;" id="btn-thanhtoan">
+            <button onclick="addcart()" id="btn-pro">Thanh toán</button>
         </div>
         <div id="footer">
-    
+            <div id="Address">
+                <div id="Address-map">
+                    <div>
+                        <p>© 2020 SONY VIỆT NAM | ĐÃ ĐĂNG KÝ BẢN QUYỀN.</p>
+                        <p>CÔNG TY TNHH SONY ELECTRONICS VIỆT NAM</p>
+                        <p>MSDN: 0305712139 – NGÀY CẤP: 16/05/2008 – NƠI CẤP: SỞ KẾ HOẠCH VÀ ĐẦU TƯ TP. HỒ CHÍ MINH.</p>
+                        <p>ĐỊA CHỈ: TẦNG 6 VÀ 7, TÒA NHÀ PRESIDENT PLACE, 93 NGUYỄN DU, PHƯỜNG BẾN NGHÉ, QUẬN 1, TP. HỒ CHÍ MINH.</p>
+                        <p>ĐIỆN THOẠI: 084 38222227</p>
+                    </div>
+                </div>
+                <div id="Address-socialN">
+                    <a href="https://www.youtube.com/user/SonyVietNamMarcom" title="youtube"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="Pay.js"></script>
 </body>
 </html>

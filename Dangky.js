@@ -9,5 +9,4 @@ function singup(){
     var json = JSON.stringify(user);
     localStorage.setItem(username,json);
     alert("Dang ky thanh cong")
-
 }
